@@ -12,7 +12,7 @@ import (
 
 // rootCmd represents the base command when called without any subcommands
 var rootCmd = &cobra.Command{
-	Use:   "mcp",
+	Use:   "mcphub",
 	Short: "MCP CLI helps you manage metadata project configs",
 	Long:  `mcp is a CLI tool to create and manage mcp.json files`,
 	// Uncomment the following line if your bare application

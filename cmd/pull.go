@@ -7,7 +7,7 @@ import (
 	"github.com/spf13/cobra"
 )
 
-func dockerAvailable() bool {
+func dockerAvailablee() bool {
 	cmd := exec.Command("docker", "info")
 	if err := cmd.Run(); err != nil {
 		return false
@@ -20,7 +20,7 @@ var pullCmd = &cobra.Command{
 	Short: "Import a local Docker image from tar and run it",
 	Args:  cobra.ExactArgs(1),
 	Run: func(cmd *cobra.Command, args []string) {
-		if !dockerAvailable() {
+		if !dockerAvailablee() {
 			fmt.Println("Docker is not running or not installed. Please start Docker and try again.")
 			return
 		}
